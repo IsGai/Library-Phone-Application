@@ -30,6 +30,16 @@ var app = {
         this.receivedEvent('deviceready');
     },
 
+    /* Set the width of the sidebar to 250px (show it) */
+    OpenNav: function() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    },
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    CloseNav: function() {
+      document.getElementById("mySidepanel").style.width = "0";
+    },
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
